@@ -1,8 +1,18 @@
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
+from flask import Flask, request
 import time
+import logging
+import json
+'''
+'''
+application = Flask(__name__)
+@application.route('/')
+def hello_world():
+    return 'Sup. Subscribe'
 
+application.run()
 
+'''
 def func_up_full():
     my_driver.execute_script("window.scrollTo(0, -document.body.scrollHeight);")
     return 0
@@ -93,3 +103,4 @@ while it != 10:
     it += 1
     print(it)
 func_exit_browser()
+'''
